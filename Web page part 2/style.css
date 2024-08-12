@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("Coding-Wallpaper-HD-Free-download.jpg");
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  width: 100vw;
+}
+.container {
+  height: 100%;
+}
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 20px;
+  height: 4rem;
+  align-items: center;
+}
+.bars {
+  display: none;
+}
+.features {
+  height: 4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.features a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 1rem 0.5rem;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 7px;
+  transition: 0.3s ease;
+}
+a:hover {
+  color: black;
+  background: white;
+}
+.hero {
+  height: 90%;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  gap: 10rem;
+}
+.info {
+  /* border: 1px solid white; */
+  max-width: 70rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 100px;
+  color: rgb(192, 255, 205);
+}
+.btns {
+  display: flex;
+  gap: 5rem;
+}
+button {
+  height: 6rem;
+  width: 14rem;
+  font-size: 30px;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  background: black;
+  transition: 0.3s ease;
+}
+button:hover {
+  color: black;
+  background: white;
+}
+
+@media screen and (max-width: 922px) {
+  .features {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .info h1 {
+    font-size: 75px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .btns {
+    flex-direction: column;
+  }
+}

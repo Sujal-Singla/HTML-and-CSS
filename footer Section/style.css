@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(236, 236, 236);
+  display: flex;
+  /* align-items: end; */
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 1px solid black;
+  min-width: 100vw;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.nav {
+  /* border: 1px solid black; */
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.336);
+  position: fixed;
+  top: 0px;
+  z-index: 12;
+  background: rgb(128, 51, 216);
+  color: white;
+}
+.logo {
+  font-size: 25px;
+}
+
+.section {
+  font-size: 22px;
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+.section a {
+  color: white;
+}
+.main {
+  position: relative;
+  z-index: 11;
+  top: 0;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  /* overflow: scroll; */
+  padding: 3rem 0;
+  min-height: 100vh;
+  justify-content: space-around;
+  min-width: 100vw;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+img {
+  background: yellow;
+  border-radius: 50%;
+}
+.left {
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+span {
+  color: orange;
+}
+.heading {
+  font-size: 100px;
+  font-weight: 500;
+}
+.sub-heading {
+  /* width: 100%; */
+  overflow: hidden;
+  /* border: 1px solid black; */
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+span {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 7s steps(14, end) infinite;
+  display: inline-block;
+  /* border: 1px solid black; */
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 25rem;
+  }
+  100% {
+    width: 0;
+  }
+}
+@media screen and (max-width: 760px) {
+  .main {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    align-items: center;
+  }
+}
+.button button {
+  background: #000;
+}
+footer {
+  z-index: 12;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+.container {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgb(128, 51, 216);
+  position: relative;
+}
+.header {
+  border: 1px solid white;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  color: white;
+}
+.header h2 {
+  font-size: 30px;
+}
+.icons {
+  font-size: 30px;
+  display: flex;
+  gap: 1.3rem;
+}
+.fa-facebook {
+  color: rgb(47, 47, 255);
+  background: white;
+  padding: 0.6rem;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+.fa-instagram {
+  color: rgb(255, 0, 255);
+  background: white;
+  padding: 0.6rem;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+.fa-youtube {
+  color: rgb(255, 0, 0);
+  background: white;
+  padding: 0.6rem;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+.fa-twitter {
+  color: rgba(0, 170, 248, 0.973);
+  background: white;
+  padding: 0.6rem;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+.fa-facebook:hover {
+  background: rgb(47, 47, 255);
+  color: white;
+}
+.fa-instagram:hover {
+  background: rgb(255, 0, 221);
+  color: white;
+}
+.fa-youtube:hover {
+  background: rgb(255, 0, 0);
+  color: white;
+}
+.fa-twitter:hover {
+  background: rgb(0, 204, 255);
+  color: white;
+}
+.hero {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+  padding: 0px 20px;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 20px;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 20px;
+}
+.input {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+input {
+  background: none;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  color: white;
+}
+::placeholder {
+  color: white;
+}
+button {
+  background: none;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+hr {
+  position: absolute;
+  width: 3rem;
+  height: 4px;
+  background: black;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  top: 35px;
+}
+.rights {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  color: white;
+  font-size: 1.1rem;
+}
+.terms {
+  display: flex;
+  gap: 1rem;
+}

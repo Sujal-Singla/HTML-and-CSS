@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-list {
+  height: 100vh;
+  /* width: 100vw; */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.items {
+  height: 25rem;
+  min-width: 18rem;
+  border: 1px solid black;
+  margin: 1rem;
+  /* scroll-snap-align: center; */
+}
+img {
+  /* display: none; */
+  height: 25rem;
+  width: 18rem;
+}
