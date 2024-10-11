@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-image: url("pngtree-pink-geometric-circle-gradient-fashion-background-image_722289.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.container {
+  min-height: 90vh;
+  width: 90%;
+  background: rgba(255, 96, 123, 0.295);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.267),
+    inset 0px 0px 20px 1px rgba(255, 255, 255, 0.384);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 2rem;
+  align-items: center;
+}
+.nav img {
+  width: 150px;
+}
+.nav-Link {
+  font-size: 22px;
+  display: flex;
+  gap: 1rem;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+.nav a:hover {
+  color: white;
+}
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s ease;
+  background: linear-gradient(45deg, white, rgb(250, 91, 117));
+}
+button:hover {
+  padding: 0.3rem 0.6rem;
+}
+.main {
+  padding: 0rem 4rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  overflow: hidden;
+}
+.main h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.main p {
+  width: 45rem;
+}
+.footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem;
+  overflow: hidden;
+}
+.fa-hamburger {
+  visibility: hidden;
+}
+i {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+hr {
+  width: 30px;
+  border: 1px solid black;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+@media screen and (max-width: 891px) {
+  .nav {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 806px) {
+  .main p {
+    width: 35rem;
+  }
+  .main .heading {
+    width: 35rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  .main p {
+    width: 18rem;
+  }
+  .main .heading {
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-Link {
+    display: none;
+  }
+  .fa-hamburger {
+    visibility: visible;
+  }
+}
