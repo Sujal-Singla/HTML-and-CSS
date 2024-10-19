@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(24, 23, 23);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blob {
+  height: 15rem;
+  width: 15rem;
+  animation: radius 8s linear infinite, rotate 8s linear infinite;
+  border-radius: 50% 60% 40% 50% / 40% 50% 60% 50%;
+  box-shadow: 0px 10px 30px  rgb(17, 17, 17);
+  background: linear-gradient(rgb(255, 0, 0), rgb(243, 207, 3));
+}
+@keyframes rotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes radius {
+  0% {
+    border-radius: 50% 60% 40% 50% / 40% 50% 60% 50%;
+  }
+  12.5% {
+    border-radius: 50% 50% 40% 60%;
+  }
+  25% {
+    border-radius: 40% 40% 50% 50%;
+  }
+  37.5% {
+    border-radius: 60% 40% 50% 60%;
+  }
+  50% {
+    border-radius: 50% 50% 40% 60%;
+  }
+  62.5% {
+    border-radius: 40% 50% 60% 40%;
+  }
+  75% {
+    border-radius: 40% 60% 50% 40%;
+  }
+  87.5% {
+    border-radius: 40% 50% 60% 60%;
+  }
+  100% {
+    border-radius: 60% 50% 40% 50%;
+  }
+}
