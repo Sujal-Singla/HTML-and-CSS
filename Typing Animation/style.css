@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background: rgb(43, 21, 21);
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animation h1 {
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  animation: type 15s steps(30) infinite, blink 0.5s linear infinite;
+  margin: 0 auto;
+  transition: 0.5s linear;
+}
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+@keyframes type {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  70% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
