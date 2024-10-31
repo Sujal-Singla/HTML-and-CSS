@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: grey;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.5rem;
+  font-size: 30px;
+}
+.fa-brands {
+  
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 30px;
+}
+.social{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column-reverse;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+.fa-facebook{
+    color: rgb(0, 132, 255);
+    background: white;
+}
+.fa-instagram{
+    color: rgb(255, 0, 212);
+    background: white;
+}
+.fa-youtube{
+    color: rgb(255, 0, 0);
+    background: white;
+}
+.fa-twitter{
+    color: rgb(0, 153, 255);
+    background: white;
+}
+
+.tooltip-text {
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+  border-radius: 6px;
+  visibility: hidden;
+  transition: 0.2s linear;
+}
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: black;
+  transform: translate(-50%, 50%) rotate(45deg);
+  bottom: 0;
+  /* transform: rotate(45deg); */
+  left: 50%;
+}
+.fa-brands:hover ~ .tooltip-text {
+ visibility: visible;
+}
